@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MaterialLikeTextField.svg?style=flat)](https://cocoapods.org/pods/MaterialLikeTextField)
 [![Platform](https://img.shields.io/cocoapods/p/MaterialLikeTextField.svg?style=flat)](https://cocoapods.org/pods/MaterialLikeTextField)
 
+### MaterialTextField is material design styled text field, extends UITextField class.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +24,7 @@ pod 'MaterialLikeTextField'
 
 ## Author
 
-brownsoo, hyonsoo.han@tlx.co.kr
+brownsoo, hansune@me.com
 
 ## License
 

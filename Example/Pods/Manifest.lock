@@ -1,0 +1,16 @@
+PODS:
+  - MaterialLikeTextField (0.1.0)
+
+DEPENDENCIES:
+  - MaterialLikeTextField (from `../`)
+
+EXTERNAL SOURCES:
+  MaterialLikeTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MaterialLikeTextField: 7f68f4d2bfb25649ac6617e68c5fe5ab37dc818d
+
+PODFILE CHECKSUM: 164505fe2b6d9140aee3836692b1a793553974c4
+
+COCOAPODS: 1.5.3

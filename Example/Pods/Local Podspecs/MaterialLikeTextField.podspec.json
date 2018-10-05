@@ -1,0 +1,22 @@
+{
+  "name": "MaterialLikeTextField",
+  "version": "0.1.0",
+  "summary": "A short description of MaterialLikeTextField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/brownsoo/MaterialLikeTextField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "brownsoo": "hyonsoo.han@tlx.co.kr"
+  },
+  "source": {
+    "git": "https://github.com/brownsoo/MaterialLikeTextField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MaterialLikeTextField/Classes/**/*"
+}

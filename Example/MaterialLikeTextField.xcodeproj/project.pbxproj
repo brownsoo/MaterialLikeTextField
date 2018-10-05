@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		094CD53DFD17B91802DA1EA6 /* Pods-MaterialLikeTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialLikeTextField_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4048BA9D32AF9F4750D02455 /* Pods_MaterialLikeTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialLikeTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4353914612C4333C2AFAE75D /* MaterialLikeTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MaterialLikeTextField.podspec; path = ../MaterialLikeTextField.podspec; sourceTree = "<group>"; };
+		4353914612C4333C2AFAE75D /* MaterialLikeTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MaterialLikeTextField.podspec; path = ../MaterialLikeTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4FCEEB1BE980230E9230FB5B /* Pods-MaterialLikeTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialLikeTextField_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialLikeTextField_Tests/Pods-MaterialLikeTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MaterialLikeTextField_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialLikeTextField_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,10 +42,10 @@
 		607FACE51AFB9204008FA782 /* MaterialLikeTextField_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialLikeTextField_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6089746611EFB4A9ADE4E2EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6089746611EFB4A9ADE4E2EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		76CA93EA6C8FF1ABF836AFBE /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialLikeTextField_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialLikeTextField_Tests/Pods-MaterialLikeTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4376B02AD1FCE5ED82F23E3 /* Pods_MaterialLikeTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialLikeTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B33134E0F8EEE71069720791 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B33134E0F8EEE71069720791 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD7CEDFA1C8CF268A8885C67 /* Pods-MaterialLikeTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialLikeTextField_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

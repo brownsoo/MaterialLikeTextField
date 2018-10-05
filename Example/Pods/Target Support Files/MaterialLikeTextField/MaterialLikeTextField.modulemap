@@ -1,0 +1,6 @@
+framework module MaterialLikeTextField {
+  umbrella header "MaterialLikeTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
