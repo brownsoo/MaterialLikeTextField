@@ -7,6 +7,14 @@
 
 ### MaterialTextField is material design styled text field, extends UITextField class.
 
+![Demo for MaterialLikeTextField](mf-sample.gif)
+
+### TODO
+
+- [ ] Code line documentation
+- [ ] fix: 'changeLabelWithPlaceholder' is set to use it.
+- [ ] add more examples
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
