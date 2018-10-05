@@ -1,22 +1,23 @@
 {
   "name": "MaterialLikeTextField",
   "version": "0.1.0",
-  "summary": "A short description of MaterialLikeTextField.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "One file material design styled UITextField.",
+  "description": "MaterialTextField is material design styled text field, extends UITextField class.",
   "homepage": "https://github.com/brownsoo/MaterialLikeTextField",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "brownsoo": "hyonsoo.han@tlx.co.kr"
+    "brownsoo": "hansune@me.com"
   },
   "source": {
     "git": "https://github.com/brownsoo/MaterialLikeTextField.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/hansoolabs",
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
   "source_files": "MaterialLikeTextField/Classes/**/*"
 }

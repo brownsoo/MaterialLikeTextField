@@ -47,7 +47,7 @@ public class MaterialLikeTextField: UITextField {
     // MARK: Properties
     
     public var textPadding = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
-    public var changeLabelWithPlaceholder: Bool = true {
+    public var changeLabelWithPlaceholder: Bool = false {
         didSet {
             layoutLabel(false)
         }
@@ -151,7 +151,7 @@ public class MaterialLikeTextField: UITextField {
     }
     
     public var tintedClearImage: UIImage?
-    public var nextTextField: MaterialTextField?
+    public var nextTextField: MaterialLikeTextField?
     
     // label --
     private lazy var label = UILabel()
@@ -309,8 +309,8 @@ public class MaterialLikeTextField: UITextField {
     }
     
     private func setupDefaults() {
-        defaultLabelFont = getDefaultFontForLabel()
-        leadingUnderlineLabelFont = leadingUnderlineFontDefault
+        self.defaultLabelFont = getDefaultFontForLabel()
+        self.leadingUnderlineLabelFont = leadingUnderlineFontDefault
     }
     
     private func setupTextField() {
