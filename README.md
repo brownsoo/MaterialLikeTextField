@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MaterialLikeTextField.svg?style=flat)](https://cocoapods.org/pods/MaterialLikeTextField)
 [![codebeat badge](https://codebeat.co/badges/66d4804e-dd31-425a-bd26-6dbc724a5640)](https://codebeat.co/projects/github-com-brownsoo-materialliketextfield-master)
 
-### MaterialTextField is material design styled text field, extends UITextField class.
+### MaterialLikeTextField is material design styled text field, extends UITextField class.
 
 ![Demo for MaterialLikeTextField](mf-sample.gif)
 

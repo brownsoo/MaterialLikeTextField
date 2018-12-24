@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-MaterialTextField is material design styled text field, extends UITextField class.
+MaterialLikeTextField is material design styled text field, extends UITextField class.
                        DESC
 
   s.homepage         = 'https://github.com/brownsoo/MaterialLikeTextField'
