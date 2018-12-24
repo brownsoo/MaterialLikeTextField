@@ -239,6 +239,8 @@ public class MaterialLikeTextField: UITextField {
             rect.size.height = lineHeight
         }
         rect.origin.y = adjustedYPositionForTextRect()
+        rect.origin.x = textPadding.left
+        rect.size.width = rect.size.width - (textPadding.left + textPadding.right)
         self.textRect = rect
         return rect
     }
