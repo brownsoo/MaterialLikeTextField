@@ -175,6 +175,9 @@ public class MaterialLikeTextField: UITextField {
     
     public var shouldShowLabel: Bool {
         let isEmpty = text == nil || text!.isEmpty
+        if !changeLabelWithPlaceholder {
+            return false
+        }
         return !isEmpty
             || labelText != nil
             || (changeLabelWithPlaceholderWhenFocus && isFirstResponder)
