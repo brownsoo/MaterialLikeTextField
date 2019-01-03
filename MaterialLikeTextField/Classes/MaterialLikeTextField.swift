@@ -149,7 +149,8 @@ public class MaterialLikeTextField: UITextField {
             updateLeadingLabelTextColor()
         }
     }
-    
+
+    public var underlineTextIsDynamicHeight = true
     public var tintedClearImage: UIImage?
     public var nextTextField: MaterialLikeTextField?
     
@@ -597,7 +598,7 @@ public class MaterialLikeTextField: UITextField {
         leadingLabelConstraints.trailing?.isActive = true
         // zero height
         leadingLabelZeroHeightConstraint = leadingLabel.heightAnchor.constraint(equalToConstant: 0)
-        leadingLabelZeroHeightConstraint?.isActive = !hasLeadingTexts
+        leadingLabelZeroHeightConstraint?.isActive = !hasLeadingTexts && underlineTextIsDynamicHeight
     }
     
     public func setErrorText(_ errorText: String?, animated: Bool = false) {
@@ -622,7 +623,7 @@ public class MaterialLikeTextField: UITextField {
     }
     
     private func topOffsetForLeadingLabel(_ hidden: Bool) -> CGFloat {
-        if hidden {
+        if hidden && underlineTextIsDynamicHeight {
             return underlineLayer.frame.maxY
         }
         return underlineLayer.frame.maxY + leadingLabelPadding.top
@@ -633,7 +634,11 @@ public class MaterialLikeTextField: UITextField {
     }
     
     private func updateLeadingLabelText() {
-        leadingLabel.text = hasError ? errorText : helperText
+        var text = hasError ? errorText : helperText
+        if text == nil && !underlineTextIsDynamicHeight {
+            text = " " // fake
+        }
+        leadingLabel.text = text
         leadingLabel.sizeToFit()
     }
     
@@ -687,7 +692,7 @@ public class MaterialLikeTextField: UITextField {
                 completion: { [weak self] finished in
                     self?.leadingLabel.isHidden = true
                     self?.leadingLabelConstraints.top?.constant = self?.topOffsetForLeadingLabel(true) ?? 0
-                    self?.leadingLabelZeroHeightConstraint?.isActive = true
+                    self?.leadingLabelZeroHeightConstraint?.isActive = self?.underlineTextIsDynamicHeight ?? true
                     
                     self?.leadingLabelIsAnimating = false
                     self?.updateLeadingLabelText()
@@ -700,7 +705,7 @@ public class MaterialLikeTextField: UITextField {
             leadingLabel.alpha = 0
             leadingLabel.isHidden = true
             leadingLabelConstraints.top?.constant = topOffsetForLeadingLabel(true)
-            leadingLabelZeroHeightConstraint?.isActive = true
+            leadingLabelZeroHeightConstraint?.isActive = self.underlineTextIsDynamicHeight
         }
     }
 }
