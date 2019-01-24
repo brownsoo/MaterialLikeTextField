@@ -237,17 +237,41 @@ public class MaterialLikeTextField: UITextField {
             return super.attributedPlaceholder
         }
     }
+
     public override func textRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.textRect(forBounds: bounds)
         if let lineHeight = self.font?.lineHeight {
             rect.size.height = lineHeight
         }
-        rect.origin.y = adjustedYPositionForTextRect()
-        rect.origin.x = textPadding.left
+        rect.origin.y = adjustedTopForTextRect()
+        rect.origin.x = rect.origin.x + textPadding.left
         rect.size.width = rect.size.width - (textPadding.left + textPadding.right)
         self.textRect = rect
         return rect
     }
+
+    private func adjustedTopForTextRect() -> CGFloat {
+        var top = ceil(textPadding.top)
+        if changeLabelWithPlaceholder || labelText != nil {
+            top += labelFont.lineHeight + labelTopPadding
+        }
+        return top
+    }
+
+    public override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+        let tr = _textRect
+        var rect = super.leftViewRect(forBounds: bounds)
+        rect.origin.y = tr.origin.y + (tr.height - rect.height) / 2
+        return rect
+    }
+
+    public override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+        let tr = _textRect
+        var rect = super.rightViewRect(forBounds: bounds)
+        rect.origin.y = tr.origin.y + (tr.height - rect.height) / 2
+        return rect
+    }
+
     public override func editingRect(forBounds bounds: CGRect) -> CGRect {
         return textRect(forBounds: bounds)
     }
@@ -372,14 +396,6 @@ public class MaterialLikeTextField: UITextField {
         layoutLeadingUnderlineLabel(false)
         layoutLabel(true)
         
-    }
-    
-    private func adjustedYPositionForTextRect() -> CGFloat {
-        var top = ceil(textPadding.top)
-        if changeLabelWithPlaceholder || labelText != nil {
-            top += labelFont.lineHeight + labelTopPadding
-        }
-        return top
     }
     
     // MARK: for underline
