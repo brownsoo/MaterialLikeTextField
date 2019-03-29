@@ -2,7 +2,7 @@
   "name": "MaterialLikeTextField",
   "version": "0.1.0",
   "summary": "One file material design styled UITextField.",
-  "description": "MaterialTextField is material design styled text field, extends UITextField class.",
+  "description": "MaterialLikeTextField is material design styled text field, extends UITextField class.",
   "homepage": "https://github.com/brownsoo/MaterialLikeTextField",
   "license": {
     "type": "MIT",

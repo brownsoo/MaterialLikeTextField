@@ -7,299 +7,258 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26DE0BF723A34175184F968AE42B1AD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		40B946EC0E624626F9F2F999A426C59F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7F9EBD668DACD76576C59A8700F5B19F /* Pods-MaterialLikeTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E3E90BCCDF2DC34FCB2FC7983D0A4C /* Pods-MaterialLikeTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		867926AF9BE09BA68825A7D00DB58D6A /* Pods-MaterialLikeTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2903D79F83424179B73B4B5C610E7AC /* Pods-MaterialLikeTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DF3C0DE1EC633B5FB189DBF138B423C /* Pods-MaterialLikeTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1F67D6639C3D982AEDEBF7AEE3593 /* Pods-MaterialLikeTextField_Example-dummy.m */; };
-		B7E72400C2691A48E29FD4E8F70440C4 /* MaterialLikeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9C9005E24251FF1E16543A62372EBE /* MaterialLikeTextField.swift */; };
-		C68F7103FE12E9B71A65C63705A0F466 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DE912DF68B7DA69343DEBF2B229276A3 /* Pods-MaterialLikeTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4B86191E44D848B2D3FC5C0E03E55F /* Pods-MaterialLikeTextField_Tests-dummy.m */; };
-		E1068B2F5486BF6BADB2CA62218F0182 /* MaterialLikeTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A336C7892FDBDB1724761DDC72B0768C /* MaterialLikeTextField-dummy.m */; };
-		E9ADF48E385725FDF47C62753ACC0373 /* MaterialLikeTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B9392A312333D5A58BFC581862357A /* MaterialLikeTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02760D0DAED9EE41D9451258F15EA79B /* MaterialLikeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFC720234760A107F02A4A5CDDC257 /* MaterialLikeTextField.swift */; };
+		235C2C6C2CEF5B2CE6389270FF2F068A /* MaterialLikeTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 371FF5EA56EEA6D1AA2861712FFD87BE /* MaterialLikeTextField-dummy.m */; };
+		2FBCA324C610E9A570CC8B365DBD7BCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		3BC37D0B1FDDD8664F57663A55379844 /* MaterialLikeTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7618BD506F7D41B8ADE50E9CF4511901 /* MaterialLikeTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A356E4D7E8B943728CE78A413645F94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5AFACA9012AF66CF9B675D81DE891AEC /* Pods-MaterialLikeTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A2E07D99B18432B114BA83093F973 /* Pods-MaterialLikeTextField_Tests-dummy.m */; };
+		5B85E9DFDB8977B5A4F602B1F383CD70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		78E46A0DE1813C355E597AD34A279B87 /* Pods-MaterialLikeTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B5E7DE07B23044BF1C58832A545EC9 /* Pods-MaterialLikeTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA65CCEABC87EBA3D80461728BE95E03 /* Pods-MaterialLikeTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 409A5C89D858412A689EF885FEF147F5 /* Pods-MaterialLikeTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F052FEEB2E01A33D59258214D1A868C5 /* Pods-MaterialLikeTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE41A6D71E27E3A5A57C75E12E71C /* Pods-MaterialLikeTextField_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8BA18FAD5307602CFB33B8D3E7019448 /* PBXContainerItemProxy */ = {
+		12D89FD37846639653F6EEA086865ECB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F0D179B83E592E7ADF34B6B96C01D25;
+			remoteGlobalIDString = 7B7EBDBC8A47BC3F1CA6706890D65662;
 			remoteInfo = "Pods-MaterialLikeTextField_Example";
 		};
-		A5CA9702831B225538E660D218DD538E /* PBXContainerItemProxy */ = {
+		3E3A1C585981CBA498FB743FFFF527A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D0B99FE73769CCFEF99C90E22102136;
+			remoteGlobalIDString = 38F6E3E563A0480E20A36CCC3F8D9731;
 			remoteInfo = MaterialLikeTextField;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CDA8EE64C00E32CE1ADB4507C8E7A51 /* Pods-MaterialLikeTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialLikeTextField_Tests.modulemap"; sourceTree = "<group>"; };
-		20FD35B140579E9CF6B2BA34640BABAE /* Pods-MaterialLikeTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialLikeTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A45355688D33A5283F345EB5A42DCC8 /* Pods-MaterialLikeTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2ADC35A41F69544848A6D80F385FCFC9 /* MaterialLikeTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialLikeTextField.xcconfig; sourceTree = "<group>"; };
-		2B657856ACD9034D48237A0A4BA48DB4 /* Pods_MaterialLikeTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MaterialLikeTextField_Tests.framework; path = "Pods-MaterialLikeTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D4B86191E44D848B2D3FC5C0E03E55F /* Pods-MaterialLikeTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialLikeTextField_Tests-dummy.m"; sourceTree = "<group>"; };
-		33B9392A312333D5A58BFC581862357A /* MaterialLikeTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialLikeTextField-umbrella.h"; sourceTree = "<group>"; };
-		3750702EE63332EFE30997E27AF72F89 /* MaterialLikeTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialLikeTextField.framework; path = MaterialLikeTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		383818EDFCB6CA2DF33ABFA6C4E2F343 /* Pods-MaterialLikeTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
-		51CB4C7D0B5B0EAAFAB062B4FE2E582C /* MaterialLikeTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialLikeTextField-prefix.pch"; sourceTree = "<group>"; };
-		56ECAF622379571663C962122F74DAC0 /* MaterialLikeTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MaterialLikeTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		59EC249B115A044CBEFD5E43D3A27AB0 /* Pods-MaterialLikeTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialLikeTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5A75A57957488FB2DFAC99C39D2C342E /* Pods_MaterialLikeTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MaterialLikeTextField_Example.framework; path = "Pods-MaterialLikeTextField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		621D4E17B31BC55267FA57A483EB2C1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68DC7ECC3C3239B613438AEFB3B20ED9 /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6ABFB4C4AB8C75D1BB936B106A688465 /* Pods-MaterialLikeTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialLikeTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
-		716D8FE894A809673C83CCC61C92A506 /* Pods-MaterialLikeTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialLikeTextField_Example.modulemap"; sourceTree = "<group>"; };
-		828029E2CDFAB5FFDBB949E8764682D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BA092698A9186B5CFC488B172A9893F /* MaterialLikeTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MaterialLikeTextField.modulemap; sourceTree = "<group>"; };
-		91E3E90BCCDF2DC34FCB2FC7983D0A4C /* Pods-MaterialLikeTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialLikeTextField_Example-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2903D79F83424179B73B4B5C610E7AC /* Pods-MaterialLikeTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialLikeTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A336C7892FDBDB1724761DDC72B0768C /* MaterialLikeTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialLikeTextField-dummy.m"; sourceTree = "<group>"; };
-		A5FFE862D2240147AA9B3DDDD4F6448B /* Pods-MaterialLikeTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AAE0451AED3FF92388222861A886EA03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B3328463CCF91CFCB5D8BC6D9F246840 /* Pods-MaterialLikeTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialLikeTextField_Tests-resources.sh"; sourceTree = "<group>"; };
-		B91644BDC2B26CB214DD4C2D0D20E392 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		BDB5995C8D638D05FAEC924E193DFF8B /* Pods-MaterialLikeTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialLikeTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BED1F67D6639C3D982AEDEBF7AEE3593 /* Pods-MaterialLikeTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialLikeTextField_Example-dummy.m"; sourceTree = "<group>"; };
-		C3DA957FD15C3925CD23108983AC773D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D558F7B68E56F2BC45978855A6BAD740 /* Pods-MaterialLikeTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialLikeTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EAED9BF468820B834371CB51D72C0D5C /* Pods-MaterialLikeTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialLikeTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FCA15865DDB6927F573D28C841BBF151 /* Pods-MaterialLikeTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialLikeTextField_Example-resources.sh"; sourceTree = "<group>"; };
-		FD9C9005E24251FF1E16543A62372EBE /* MaterialLikeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialLikeTextField.swift; path = MaterialLikeTextField/Classes/MaterialLikeTextField.swift; sourceTree = "<group>"; };
+		0F829558DEBB5B5FAC9358320ECC6378 /* Pods_MaterialLikeTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialLikeTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1238124BFE24663081C1749D414E2E5A /* Pods-MaterialLikeTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialLikeTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
+		19E5B8750E766815AD840D497A0CEBEA /* Pods-MaterialLikeTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		214D68D7DC0BD8C72AB2BBC2B1AA46DD /* MaterialLikeTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialLikeTextField.xcconfig; sourceTree = "<group>"; };
+		221C4BE0E8CF54DC159AFC113DA42BBD /* Pods-MaterialLikeTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialLikeTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		259B52EE4E9B0876DC9C594347F44A3E /* Pods-MaterialLikeTextField_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialLikeTextField_Example-Info.plist"; sourceTree = "<group>"; };
+		2C6FA609D1451A90EDB9646E3955D847 /* Pods_MaterialLikeTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialLikeTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F41966BF8F5B7881987D4B066BB762B /* Pods-MaterialLikeTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialLikeTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		2FBE6C6A164180C2BFCFC96ED9CC16FE /* MaterialLikeTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MaterialLikeTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		371FF5EA56EEA6D1AA2861712FFD87BE /* MaterialLikeTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialLikeTextField-dummy.m"; sourceTree = "<group>"; };
+		409A5C89D858412A689EF885FEF147F5 /* Pods-MaterialLikeTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialLikeTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		42AD5FCBE500FB7DC3EAFF40645DFC26 /* Pods-MaterialLikeTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialLikeTextField_Tests-Info.plist"; sourceTree = "<group>"; };
+		4B67E338719961107C39409EDE49967C /* MaterialLikeTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MaterialLikeTextField-Info.plist"; sourceTree = "<group>"; };
+		4EA9805B09BEB8C810368472BE189E95 /* MaterialLikeTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MaterialLikeTextField.modulemap; sourceTree = "<group>"; };
+		5BB046E212A05CE3535A359ACF1A3EFB /* Pods-MaterialLikeTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		66FC6505B4347C0EEF71F2731E494C9F /* MaterialLikeTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialLikeTextField-prefix.pch"; sourceTree = "<group>"; };
+		7618BD506F7D41B8ADE50E9CF4511901 /* MaterialLikeTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialLikeTextField-umbrella.h"; sourceTree = "<group>"; };
+		8255EBDDAB405B1DBF3C9E70286E86BD /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A8A85D0F4D0DCCBB2F8227F8C10B8C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		97A27A98AB0554D32B1685FE9D016323 /* Pods-MaterialLikeTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialLikeTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5DFC720234760A107F02A4A5CDDC257 /* MaterialLikeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialLikeTextField.swift; path = MaterialLikeTextField/Classes/MaterialLikeTextField.swift; sourceTree = "<group>"; };
+		C135A563F2DDA9DA6018F1877A312078 /* Pods-MaterialLikeTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialLikeTextField_Example.modulemap"; sourceTree = "<group>"; };
+		C8B1F84E64E989DCAD193395812BF9F1 /* Pods-MaterialLikeTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialLikeTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DEB8668B5B2E26A2C4C9ACF5A8EA5680 /* Pods-MaterialLikeTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialLikeTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3A8AEAAE761FDFE37D35C5F687779FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E650BD2FCB254F9FEB2B54EA315F9081 /* Pods-MaterialLikeTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialLikeTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EFBCBFF7DE7FBC8D714EA89FA22E5AA1 /* MaterialLikeTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialLikeTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B5E7DE07B23044BF1C58832A545EC9 /* Pods-MaterialLikeTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialLikeTextField_Example-umbrella.h"; sourceTree = "<group>"; };
+		F95A2E07D99B18432B114BA83093F973 /* Pods-MaterialLikeTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialLikeTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		FA1BE41A6D71E27E3A5A57C75E12E71C /* Pods-MaterialLikeTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialLikeTextField_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4FC05A668ECA2D6BEBF509F686B61E1E /* Frameworks */ = {
+		2F87A721C0EE36F3176B2195FD4E6F02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B946EC0E624626F9F2F999A426C59F /* Foundation.framework in Frameworks */,
+				2FBCA324C610E9A570CC8B365DBD7BCD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93454E398CAAE2E2A80BB33E73305370 /* Frameworks */ = {
+		321E823C621EC34A78FDE1DEDB7D2E62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68F7103FE12E9B71A65C63705A0F466 /* Foundation.framework in Frameworks */,
+				4A356E4D7E8B943728CE78A413645F94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EB3E83469B5AFBEC8383D016066E95F /* Frameworks */ = {
+		4D7ABE969496A2695C7199141E6FD1B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DE0BF723A34175184F968AE42B1AD5 /* Foundation.framework in Frameworks */,
+				5B85E9DFDB8977B5A4F602B1F383CD70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07ECAE62866A75EF0D64ED34BF77FA1C /* Products */ = {
+		0BFC6F20A6B7BF28361BAE41EA2542C9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3750702EE63332EFE30997E27AF72F89 /* MaterialLikeTextField.framework */,
-				5A75A57957488FB2DFAC99C39D2C342E /* Pods_MaterialLikeTextField_Example.framework */,
-				2B657856ACD9034D48237A0A4BA48DB4 /* Pods_MaterialLikeTextField_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1F7DAA01EA7C93DA667354679EC28266 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B91644BDC2B26CB214DD4C2D0D20E392 /* LICENSE */,
-				56ECAF622379571663C962122F74DAC0 /* MaterialLikeTextField.podspec */,
-				AAE0451AED3FF92388222861A886EA03 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		35315F44895D9CA283C3D443D471AAE3 /* Pods-MaterialLikeTextField_Example */ = {
-			isa = PBXGroup;
-			children = (
-				828029E2CDFAB5FFDBB949E8764682D0 /* Info.plist */,
-				716D8FE894A809673C83CCC61C92A506 /* Pods-MaterialLikeTextField_Example.modulemap */,
-				BDB5995C8D638D05FAEC924E193DFF8B /* Pods-MaterialLikeTextField_Example-acknowledgements.markdown */,
-				20FD35B140579E9CF6B2BA34640BABAE /* Pods-MaterialLikeTextField_Example-acknowledgements.plist */,
-				BED1F67D6639C3D982AEDEBF7AEE3593 /* Pods-MaterialLikeTextField_Example-dummy.m */,
-				6ABFB4C4AB8C75D1BB936B106A688465 /* Pods-MaterialLikeTextField_Example-frameworks.sh */,
-				FCA15865DDB6927F573D28C841BBF151 /* Pods-MaterialLikeTextField_Example-resources.sh */,
-				91E3E90BCCDF2DC34FCB2FC7983D0A4C /* Pods-MaterialLikeTextField_Example-umbrella.h */,
-				2A45355688D33A5283F345EB5A42DCC8 /* Pods-MaterialLikeTextField_Example.debug.xcconfig */,
-				383818EDFCB6CA2DF33ABFA6C4E2F343 /* Pods-MaterialLikeTextField_Example.release.xcconfig */,
-			);
-			name = "Pods-MaterialLikeTextField_Example";
-			path = "Target Support Files/Pods-MaterialLikeTextField_Example";
-			sourceTree = "<group>";
-		};
-		6EDB13753F456C464356CFC5F6BF7C67 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				35315F44895D9CA283C3D443D471AAE3 /* Pods-MaterialLikeTextField_Example */,
-				B4AD8D40C87A230642CC75EB9C35B6B9 /* Pods-MaterialLikeTextField_Tests */,
+				B67BA490AAE20202FAE88421B8E4E2EF /* Pods-MaterialLikeTextField_Example */,
+				42537FCB880A33461AF42E79604A8E87 /* Pods-MaterialLikeTextField_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		1313A38CE393D3BA8AFB64D3D7F9D578 /* MaterialLikeTextField */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				CF61BB1203A3734F98E13DFBD3C577BD /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				07ECAE62866A75EF0D64ED34BF77FA1C /* Products */,
-				6EDB13753F456C464356CFC5F6BF7C67 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		887356B793D0B428A61199CFE7FA4D84 /* MaterialLikeTextField */ = {
-			isa = PBXGroup;
-			children = (
-				FD9C9005E24251FF1E16543A62372EBE /* MaterialLikeTextField.swift */,
-				1F7DAA01EA7C93DA667354679EC28266 /* Pod */,
-				8950EEA8891442EB966EB2451D60CA38 /* Support Files */,
+				B5DFC720234760A107F02A4A5CDDC257 /* MaterialLikeTextField.swift */,
+				678FB2EAC74F3F80BB9E86689FB0C19B /* Pod */,
+				60C7CD9629CAF6E1A6C842AA67D79560 /* Support Files */,
 			);
 			name = MaterialLikeTextField;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		8950EEA8891442EB966EB2451D60CA38 /* Support Files */ = {
+		1F4FFEF65FFF90A715C07384CCF15D96 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				621D4E17B31BC55267FA57A483EB2C1F /* Info.plist */,
-				8BA092698A9186B5CFC488B172A9893F /* MaterialLikeTextField.modulemap */,
-				2ADC35A41F69544848A6D80F385FCFC9 /* MaterialLikeTextField.xcconfig */,
-				A336C7892FDBDB1724761DDC72B0768C /* MaterialLikeTextField-dummy.m */,
-				51CB4C7D0B5B0EAAFAB062B4FE2E582C /* MaterialLikeTextField-prefix.pch */,
-				33B9392A312333D5A58BFC581862357A /* MaterialLikeTextField-umbrella.h */,
+				1313A38CE393D3BA8AFB64D3D7F9D578 /* MaterialLikeTextField */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MaterialLikeTextField";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B4AD8D40C87A230642CC75EB9C35B6B9 /* Pods-MaterialLikeTextField_Tests */ = {
+		42537FCB880A33461AF42E79604A8E87 /* Pods-MaterialLikeTextField_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C3DA957FD15C3925CD23108983AC773D /* Info.plist */,
-				0CDA8EE64C00E32CE1ADB4507C8E7A51 /* Pods-MaterialLikeTextField_Tests.modulemap */,
-				D558F7B68E56F2BC45978855A6BAD740 /* Pods-MaterialLikeTextField_Tests-acknowledgements.markdown */,
-				EAED9BF468820B834371CB51D72C0D5C /* Pods-MaterialLikeTextField_Tests-acknowledgements.plist */,
-				2D4B86191E44D848B2D3FC5C0E03E55F /* Pods-MaterialLikeTextField_Tests-dummy.m */,
-				59EC249B115A044CBEFD5E43D3A27AB0 /* Pods-MaterialLikeTextField_Tests-frameworks.sh */,
-				B3328463CCF91CFCB5D8BC6D9F246840 /* Pods-MaterialLikeTextField_Tests-resources.sh */,
-				A2903D79F83424179B73B4B5C610E7AC /* Pods-MaterialLikeTextField_Tests-umbrella.h */,
-				68DC7ECC3C3239B613438AEFB3B20ED9 /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */,
-				A5FFE862D2240147AA9B3DDDD4F6448B /* Pods-MaterialLikeTextField_Tests.release.xcconfig */,
+				2F41966BF8F5B7881987D4B066BB762B /* Pods-MaterialLikeTextField_Tests.modulemap */,
+				DEB8668B5B2E26A2C4C9ACF5A8EA5680 /* Pods-MaterialLikeTextField_Tests-acknowledgements.markdown */,
+				221C4BE0E8CF54DC159AFC113DA42BBD /* Pods-MaterialLikeTextField_Tests-acknowledgements.plist */,
+				F95A2E07D99B18432B114BA83093F973 /* Pods-MaterialLikeTextField_Tests-dummy.m */,
+				42AD5FCBE500FB7DC3EAFF40645DFC26 /* Pods-MaterialLikeTextField_Tests-Info.plist */,
+				409A5C89D858412A689EF885FEF147F5 /* Pods-MaterialLikeTextField_Tests-umbrella.h */,
+				8255EBDDAB405B1DBF3C9E70286E86BD /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */,
+				E650BD2FCB254F9FEB2B54EA315F9081 /* Pods-MaterialLikeTextField_Tests.release.xcconfig */,
 			);
 			name = "Pods-MaterialLikeTextField_Tests";
 			path = "Target Support Files/Pods-MaterialLikeTextField_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		60C7CD9629CAF6E1A6C842AA67D79560 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				4EA9805B09BEB8C810368472BE189E95 /* MaterialLikeTextField.modulemap */,
+				214D68D7DC0BD8C72AB2BBC2B1AA46DD /* MaterialLikeTextField.xcconfig */,
+				371FF5EA56EEA6D1AA2861712FFD87BE /* MaterialLikeTextField-dummy.m */,
+				4B67E338719961107C39409EDE49967C /* MaterialLikeTextField-Info.plist */,
+				66FC6505B4347C0EEF71F2731E494C9F /* MaterialLikeTextField-prefix.pch */,
+				7618BD506F7D41B8ADE50E9CF4511901 /* MaterialLikeTextField-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MaterialLikeTextField";
 			sourceTree = "<group>";
 		};
-		CF61BB1203A3734F98E13DFBD3C577BD /* Development Pods */ = {
+		678FB2EAC74F3F80BB9E86689FB0C19B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				887356B793D0B428A61199CFE7FA4D84 /* MaterialLikeTextField */,
+				93A8A85D0F4D0DCCBB2F8227F8C10B8C /* LICENSE */,
+				2FBE6C6A164180C2BFCFC96ED9CC16FE /* MaterialLikeTextField.podspec */,
+				E3A8AEAAE761FDFE37D35C5F687779FF /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		68E4C1F6DCDE0CD002F286FB8CBAB051 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				EFBCBFF7DE7FBC8D714EA89FA22E5AA1 /* MaterialLikeTextField.framework */,
+				0F829558DEBB5B5FAC9358320ECC6378 /* Pods_MaterialLikeTextField_Example.framework */,
+				2C6FA609D1451A90EDB9646E3955D847 /* Pods_MaterialLikeTextField_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		B67BA490AAE20202FAE88421B8E4E2EF /* Pods-MaterialLikeTextField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C135A563F2DDA9DA6018F1877A312078 /* Pods-MaterialLikeTextField_Example.modulemap */,
+				C8B1F84E64E989DCAD193395812BF9F1 /* Pods-MaterialLikeTextField_Example-acknowledgements.markdown */,
+				97A27A98AB0554D32B1685FE9D016323 /* Pods-MaterialLikeTextField_Example-acknowledgements.plist */,
+				FA1BE41A6D71E27E3A5A57C75E12E71C /* Pods-MaterialLikeTextField_Example-dummy.m */,
+				1238124BFE24663081C1749D414E2E5A /* Pods-MaterialLikeTextField_Example-frameworks.sh */,
+				259B52EE4E9B0876DC9C594347F44A3E /* Pods-MaterialLikeTextField_Example-Info.plist */,
+				F2B5E7DE07B23044BF1C58832A545EC9 /* Pods-MaterialLikeTextField_Example-umbrella.h */,
+				5BB046E212A05CE3535A359ACF1A3EFB /* Pods-MaterialLikeTextField_Example.debug.xcconfig */,
+				19E5B8750E766815AD840D497A0CEBEA /* Pods-MaterialLikeTextField_Example.release.xcconfig */,
+			);
+			name = "Pods-MaterialLikeTextField_Example";
+			path = "Target Support Files/Pods-MaterialLikeTextField_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1F4FFEF65FFF90A715C07384CCF15D96 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				68E4C1F6DCDE0CD002F286FB8CBAB051 /* Products */,
+				0BFC6F20A6B7BF28361BAE41EA2542C9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		80F96E42354BFE5BF066C0E37655068D /* Headers */ = {
+		295969BB9899F65309BBBB51DDCFDAA2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9EBD668DACD76576C59A8700F5B19F /* Pods-MaterialLikeTextField_Example-umbrella.h in Headers */,
+				AA65CCEABC87EBA3D80461728BE95E03 /* Pods-MaterialLikeTextField_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6E5F745BB7FB7F4C6E8C9865F4B64F5 /* Headers */ = {
+		4AB8F39B7BBB4CDCFF77A9F44EE4996E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9ADF48E385725FDF47C62753ACC0373 /* MaterialLikeTextField-umbrella.h in Headers */,
+				78E46A0DE1813C355E597AD34A279B87 /* Pods-MaterialLikeTextField_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3F3BB747050DA470875543EA259622B /* Headers */ = {
+		58AC3DF11D10FC42A516A49C2A4D1E1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				867926AF9BE09BA68825A7D00DB58D6A /* Pods-MaterialLikeTextField_Tests-umbrella.h in Headers */,
+				3BC37D0B1FDDD8664F57663A55379844 /* MaterialLikeTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A07D62CCAE4D600F156B0742D44D660 /* Pods-MaterialLikeTextField_Tests */ = {
+		38F6E3E563A0480E20A36CCC3F8D9731 /* MaterialLikeTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1B7E51C305B1CDF57C11C99854103B9 /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Tests" */;
+			buildConfigurationList = 4FE666A96FC2B26A19B42393B70A155A /* Build configuration list for PBXNativeTarget "MaterialLikeTextField" */;
 			buildPhases = (
-				AAC2D6F2B3609C864D7CC2A044952C4F /* Sources */,
-				4FC05A668ECA2D6BEBF509F686B61E1E /* Frameworks */,
-				F3F3BB747050DA470875543EA259622B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB0A9791EF53AEC0133CB60B5F72A484 /* PBXTargetDependency */,
-			);
-			name = "Pods-MaterialLikeTextField_Tests";
-			productName = "Pods-MaterialLikeTextField_Tests";
-			productReference = 2B657856ACD9034D48237A0A4BA48DB4 /* Pods_MaterialLikeTextField_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		2F0D179B83E592E7ADF34B6B96C01D25 /* Pods-MaterialLikeTextField_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4F65B71B1C6FB9B0075EEB33522487BE /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Example" */;
-			buildPhases = (
-				9D5880E286D1C1E43B127F77823B5C7F /* Sources */,
-				93454E398CAAE2E2A80BB33E73305370 /* Frameworks */,
-				80F96E42354BFE5BF066C0E37655068D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA625E699C11D35C768F29B9905151A9 /* PBXTargetDependency */,
-			);
-			name = "Pods-MaterialLikeTextField_Example";
-			productName = "Pods-MaterialLikeTextField_Example";
-			productReference = 5A75A57957488FB2DFAC99C39D2C342E /* Pods_MaterialLikeTextField_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4D0B99FE73769CCFEF99C90E22102136 /* MaterialLikeTextField */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3FAAD6BB2098606C8C356142EB296770 /* Build configuration list for PBXNativeTarget "MaterialLikeTextField" */;
-			buildPhases = (
-				6F6EDA6F3A609A46BDA20E72F2B6B244 /* Sources */,
-				9EB3E83469B5AFBEC8383D016066E95F /* Frameworks */,
-				B6E5F745BB7FB7F4C6E8C9865F4B64F5 /* Headers */,
+				58AC3DF11D10FC42A516A49C2A4D1E1E /* Headers */,
+				B52293D521FC09331149434699351139 /* Sources */,
+				2F87A721C0EE36F3176B2195FD4E6F02 /* Frameworks */,
+				2A852F7C0D51EB96CB2789BCB40DECDA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -307,142 +266,152 @@
 			);
 			name = MaterialLikeTextField;
 			productName = MaterialLikeTextField;
-			productReference = 3750702EE63332EFE30997E27AF72F89 /* MaterialLikeTextField.framework */;
+			productReference = EFBCBFF7DE7FBC8D714EA89FA22E5AA1 /* MaterialLikeTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B7EBDBC8A47BC3F1CA6706890D65662 /* Pods-MaterialLikeTextField_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4801DE556517B1F15858427E1C8DBE64 /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Example" */;
+			buildPhases = (
+				4AB8F39B7BBB4CDCFF77A9F44EE4996E /* Headers */,
+				C0CE41DD78A85A4D22F1943A091E72BC /* Sources */,
+				4D7ABE969496A2695C7199141E6FD1B4 /* Frameworks */,
+				C19E77958EAAA0EDC94135F9077C530E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75D064029F9C10E1D8856F950A97DDB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-MaterialLikeTextField_Example";
+			productName = "Pods-MaterialLikeTextField_Example";
+			productReference = 0F829558DEBB5B5FAC9358320ECC6378 /* Pods_MaterialLikeTextField_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A38483F905661BCC63B0B68B26CAD254 /* Pods-MaterialLikeTextField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F162F666273B91477C662F0EC1286CA6 /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Tests" */;
+			buildPhases = (
+				295969BB9899F65309BBBB51DDCFDAA2 /* Headers */,
+				2D49D6352E29A238739689271D1F1F10 /* Sources */,
+				321E823C621EC34A78FDE1DEDB7D2E62 /* Frameworks */,
+				E3D76B3DD6D388A9677D59F9F6517BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF438F835972631C06CDD92C271D3636 /* PBXTargetDependency */,
+			);
+			name = "Pods-MaterialLikeTextField_Tests";
+			productName = "Pods-MaterialLikeTextField_Tests";
+			productReference = 2C6FA609D1451A90EDB9646E3955D847 /* Pods_MaterialLikeTextField_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					38F6E3E563A0480E20A36CCC3F8D9731 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 07ECAE62866A75EF0D64ED34BF77FA1C /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 68E4C1F6DCDE0CD002F286FB8CBAB051 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D0B99FE73769CCFEF99C90E22102136 /* MaterialLikeTextField */,
-				2F0D179B83E592E7ADF34B6B96C01D25 /* Pods-MaterialLikeTextField_Example */,
-				0A07D62CCAE4D600F156B0742D44D660 /* Pods-MaterialLikeTextField_Tests */,
+				38F6E3E563A0480E20A36CCC3F8D9731 /* MaterialLikeTextField */,
+				7B7EBDBC8A47BC3F1CA6706890D65662 /* Pods-MaterialLikeTextField_Example */,
+				A38483F905661BCC63B0B68B26CAD254 /* Pods-MaterialLikeTextField_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2A852F7C0D51EB96CB2789BCB40DECDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19E77958EAAA0EDC94135F9077C530E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D76B3DD6D388A9677D59F9F6517BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		6F6EDA6F3A609A46BDA20E72F2B6B244 /* Sources */ = {
+		2D49D6352E29A238739689271D1F1F10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1068B2F5486BF6BADB2CA62218F0182 /* MaterialLikeTextField-dummy.m in Sources */,
-				B7E72400C2691A48E29FD4E8F70440C4 /* MaterialLikeTextField.swift in Sources */,
+				5AFACA9012AF66CF9B675D81DE891AEC /* Pods-MaterialLikeTextField_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D5880E286D1C1E43B127F77823B5C7F /* Sources */ = {
+		B52293D521FC09331149434699351139 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF3C0DE1EC633B5FB189DBF138B423C /* Pods-MaterialLikeTextField_Example-dummy.m in Sources */,
+				235C2C6C2CEF5B2CE6389270FF2F068A /* MaterialLikeTextField-dummy.m in Sources */,
+				02760D0DAED9EE41D9451258F15EA79B /* MaterialLikeTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAC2D6F2B3609C864D7CC2A044952C4F /* Sources */ = {
+		C0CE41DD78A85A4D22F1943A091E72BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE912DF68B7DA69343DEBF2B229276A3 /* Pods-MaterialLikeTextField_Tests-dummy.m in Sources */,
+				F052FEEB2E01A33D59258214D1A868C5 /* Pods-MaterialLikeTextField_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA625E699C11D35C768F29B9905151A9 /* PBXTargetDependency */ = {
+		75D064029F9C10E1D8856F950A97DDB2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MaterialLikeTextField;
-			target = 4D0B99FE73769CCFEF99C90E22102136 /* MaterialLikeTextField */;
-			targetProxy = A5CA9702831B225538E660D218DD538E /* PBXContainerItemProxy */;
+			target = 38F6E3E563A0480E20A36CCC3F8D9731 /* MaterialLikeTextField */;
+			targetProxy = 3E3A1C585981CBA498FB743FFFF527A9 /* PBXContainerItemProxy */;
 		};
-		EB0A9791EF53AEC0133CB60B5F72A484 /* PBXTargetDependency */ = {
+		DF438F835972631C06CDD92C271D3636 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MaterialLikeTextField_Example";
-			target = 2F0D179B83E592E7ADF34B6B96C01D25 /* Pods-MaterialLikeTextField_Example */;
-			targetProxy = 8BA18FAD5307602CFB33B8D3E7019448 /* PBXContainerItemProxy */;
+			target = 7B7EBDBC8A47BC3F1CA6706890D65662 /* Pods-MaterialLikeTextField_Example */;
+			targetProxy = 12D89FD37846639653F6EEA086865ECB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+		225F7892FC0136709267FB633F4E4CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		280F2118A3C3BEADD78625FD781DE829 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5FFE862D2240147AA9B3DDDD4F6448B /* Pods-MaterialLikeTextField_Tests.release.xcconfig */;
+			baseConfigurationReference = E650BD2FCB254F9FEB2B54EA315F9081 /* Pods-MaterialLikeTextField_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -455,7 +424,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Tests/Pods-MaterialLikeTextField_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -475,9 +444,43 @@
 			};
 			name = Release;
 		};
-		5E9FD5A56E7DC6B3D8250CE35AA25150 /* Release */ = {
+		2263E50C2BCF3E1F4E669E2A81F331D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ADC35A41F69544848A6D80F385FCFC9 /* MaterialLikeTextField.xcconfig */;
+			baseConfigurationReference = 8255EBDDAB405B1DBF3C9E70286E86BD /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Tests/Pods-MaterialLikeTextField_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialLikeTextField_Tests/Pods-MaterialLikeTextField_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		240A6CFFA37BF2FEA738A37954F98E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214D68D7DC0BD8C72AB2BBC2B1AA46DD /* MaterialLikeTextField.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -490,7 +493,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialLikeTextField/MaterialLikeTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MaterialLikeTextField/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/MaterialLikeTextField/MaterialLikeTextField-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -500,8 +503,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -509,9 +511,9 @@
 			};
 			name = Release;
 		};
-		82C7327FABD160CA068686D00B3B4535 /* Debug */ = {
+		4BBBEC49183ED9740F49CADD1E849983 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ADC35A41F69544848A6D80F385FCFC9 /* MaterialLikeTextField.xcconfig */;
+			baseConfigurationReference = 214D68D7DC0BD8C72AB2BBC2B1AA46DD /* MaterialLikeTextField.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -524,7 +526,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialLikeTextField/MaterialLikeTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MaterialLikeTextField/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/MaterialLikeTextField/MaterialLikeTextField-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -534,18 +536,18 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+		4CE281642D6EE9FAB113046B4B6328A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -574,8 +576,101 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		50C604B4BDD8862B268D55BB49DA462B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E5B8750E766815AD840D497A0CEBEA /* Pods-MaterialLikeTextField_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DFA1578582149B7E24AD55CBA30F07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -596,18 +691,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		AD7320F6F7280435889F0AF461A7E942 /* Release */ = {
+		A626761344D6B922DF32248050CF1125 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 383818EDFCB6CA2DF33ABFA6C4E2F343 /* Pods-MaterialLikeTextField_Example.release.xcconfig */;
+			baseConfigurationReference = 5BB046E212A05CE3535A359ACF1A3EFB /* Pods-MaterialLikeTextField_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -620,84 +718,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E3F40C6EF8E1D5362F0099A9AA976EB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A45355688D33A5283F345EB5A42DCC8 /* Pods-MaterialLikeTextField_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MaterialLikeTextField_Example/Pods-MaterialLikeTextField_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E56677B8890217E549D715D3016A5906 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68DC7ECC3C3239B613438AEFB3B20ED9 /* Pods-MaterialLikeTextField_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MaterialLikeTextField_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MaterialLikeTextField_Tests/Pods-MaterialLikeTextField_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -714,43 +740,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4801DE556517B1F15858427E1C8DBE64 /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
-				08638A96A528B1EC32DE62F8A728389D /* Release */,
+				A626761344D6B922DF32248050CF1125 /* Debug */,
+				50C604B4BDD8862B268D55BB49DA462B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FAAD6BB2098606C8C356142EB296770 /* Build configuration list for PBXNativeTarget "MaterialLikeTextField" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82C7327FABD160CA068686D00B3B4535 /* Debug */,
-				5E9FD5A56E7DC6B3D8250CE35AA25150 /* Release */,
+				6DFA1578582149B7E24AD55CBA30F07A /* Debug */,
+				4CE281642D6EE9FAB113046B4B6328A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F65B71B1C6FB9B0075EEB33522487BE /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Example" */ = {
+		4FE666A96FC2B26A19B42393B70A155A /* Build configuration list for PBXNativeTarget "MaterialLikeTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3F40C6EF8E1D5362F0099A9AA976EB5 /* Debug */,
-				AD7320F6F7280435889F0AF461A7E942 /* Release */,
+				4BBBEC49183ED9740F49CADD1E849983 /* Debug */,
+				240A6CFFA37BF2FEA738A37954F98E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1B7E51C305B1CDF57C11C99854103B9 /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Tests" */ = {
+		F162F666273B91477C662F0EC1286CA6 /* Build configuration list for PBXNativeTarget "Pods-MaterialLikeTextField_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E56677B8890217E549D715D3016A5906 /* Debug */,
-				280F2118A3C3BEADD78625FD781DE829 /* Release */,
+				2263E50C2BCF3E1F4E669E2A81F331D9 /* Debug */,
+				225F7892FC0136709267FB633F4E4CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
