@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MaterialLikeTextField'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'One file material design styled UITextField.'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ MaterialLikeTextField is material design styled text field, extends UITextField 
                        DESC
 
   s.homepage         = 'https://github.com/brownsoo/MaterialLikeTextField'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  # s.screenshots      = 'https://github.com/brownsoo/MaterialLikeTextField/blob/master/mf-sample.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'brownsoo' => 'hansune@me.com' }
   s.source           = { :git => 'https://github.com/brownsoo/MaterialLikeTextField.git', :tag => s.version.to_s }
@@ -32,11 +32,4 @@ MaterialLikeTextField is material design styled text field, extends UITextField 
 
   s.source_files = 'MaterialLikeTextField/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MaterialLikeTextField' => ['MaterialLikeTextField/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
