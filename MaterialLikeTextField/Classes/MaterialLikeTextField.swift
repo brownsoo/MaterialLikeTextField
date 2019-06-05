@@ -198,9 +198,6 @@ public class MaterialLikeTextField: UITextField {
     private var leadingLabelConstraints = PaddingConstraints()
     private var leadingLabelZeroHeightConstraint: NSLayoutConstraint?
     private var leadingLabelIsAnimating = false
-    
-    // todo: trailing label
-    
     private var defaultLabelFont: UIFont!
     private var placeholderText: String? = nil
     
