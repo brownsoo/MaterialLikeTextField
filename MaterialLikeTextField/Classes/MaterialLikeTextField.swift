@@ -149,7 +149,8 @@ public class MaterialLikeTextField: UITextField {
             updateLeadingLabelTextColor()
         }
     }
-
+    /// Whether the underline text visibility changes a view frame or not.
+    /// default true.
     public var underlineTextIsDynamicHeight = true
     public var tintedClearImage: UIImage?
     public var nextTextField: MaterialLikeTextField?
@@ -649,7 +650,7 @@ public class MaterialLikeTextField: UITextField {
     private func updateLeadingLabelText() {
         var text = hasError ? errorText : helperText
         if text == nil && !underlineTextIsDynamicHeight {
-            text = " " // fake
+            text = " " // fake to set height
         }
         leadingLabel.text = text
         leadingLabel.sizeToFit()
