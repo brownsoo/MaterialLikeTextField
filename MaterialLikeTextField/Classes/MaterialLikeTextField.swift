@@ -195,6 +195,7 @@ public class MaterialLikeTextField: UITextField {
             leadingLabelConstraints.bottom?.constant = -leadingLabelPadding.bottom
         }
     }
+    /// leading underline text label
     private lazy var leadingLabel = UILabel()
     private var leadingLabelConstraints = PaddingConstraints()
     private var leadingLabelZeroHeightConstraint: NSLayoutConstraint?
@@ -284,7 +285,7 @@ public class MaterialLikeTextField: UITextField {
     public override var intrinsicContentSize: CGSize {
         var intrinsicSize = super.intrinsicContentSize
         if !hasLeadingTexts {
-            intrinsicSize.height = underlineLayer.frame.maxY
+            intrinsicSize.height = underlineLayer.frame.maxY + leadingLabelPadding.top
         }
         return intrinsicSize
     }
@@ -648,10 +649,7 @@ public class MaterialLikeTextField: UITextField {
     }
     
     private func updateLeadingLabelText() {
-        var text = hasError ? errorText : helperText
-        if text == nil && !underlineTextIsDynamicHeight {
-            text = " " // fake to set height
-        }
+        let text = hasError ? errorText : helperText
         leadingLabel.text = text
         leadingLabel.sizeToFit()
     }
