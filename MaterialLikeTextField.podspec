@@ -29,7 +29,7 @@ MaterialLikeTextField is material design styled text field, extends UITextField 
   s.social_media_url = 'https://twitter.com/hansoolabs'
 
   s.ios.deployment_target = '11.0'
-
+  s.swift_versions = ['5.0']
   s.source_files = 'MaterialLikeTextField/Classes/**/*'
   
 end
