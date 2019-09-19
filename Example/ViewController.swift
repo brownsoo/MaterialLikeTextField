@@ -34,8 +34,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         emailMf.autocorrectionType = .no
         emailMf.spellCheckingType = .no
         emailMf.changeLabelWithPlaceholder = false
+        emailMf.underlineTextIsDynamicHeight = true
         emailMf.addTarget(self, action: #selector(emailMfDidChange), for: .editingChanged)
-        
+
         
         view.addSubview(passwordMf)
         passwordMf.translatesAutoresizingMaskIntoConstraints = false
