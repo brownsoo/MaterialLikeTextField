@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         emailMf.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         emailMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
         emailMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
-        emailMf.labelText = "이메일"
+        emailMf.labelText = "이메일 (underlineTextIsDynamicHeight = false)"
         emailMf.placeholder = "name@email.com"
         emailMf.nextTextField = passwordMf
         emailMf.delegate = self
@@ -34,8 +34,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         emailMf.autocorrectionType = .no
         emailMf.spellCheckingType = .no
         emailMf.changeLabelWithPlaceholder = false
-        emailMf.underlineTextIsDynamicHeight = true
+        emailMf.underlineTextIsDynamicHeight = false
         emailMf.addTarget(self, action: #selector(emailMfDidChange), for: .editingChanged)
+        
+        emailMf.layer.borderColor = UIColor.magenta.cgColor
+        emailMf.layer.borderWidth = 0.5
 
         
         view.addSubview(passwordMf)
@@ -43,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordMf.topAnchor.constraint(equalTo: emailMf.bottomAnchor, constant: 8).isActive = true
         passwordMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
         passwordMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
-        passwordMf.labelText = "비밀번호"
+        passwordMf.labelText = "비밀번호 (underlineTextIsDynamicHeight = true"
         passwordMf.placeholder = "please type password"
         passwordMf.isSecureTextEntry = true
         passwordMf.delegate = self
@@ -54,6 +57,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordMf.changeLabelWithPlaceholder = false
         passwordMf.addTarget(self, action: #selector(passwordMfDidChange), for: .editingChanged)
         
+        passwordMf.layer.borderColor = UIColor.magenta.cgColor
+        passwordMf.layer.borderWidth = 0.5
     }
 
     override func didReceiveMemoryWarning() {

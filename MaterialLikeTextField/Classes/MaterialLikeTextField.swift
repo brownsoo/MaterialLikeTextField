@@ -159,8 +159,7 @@ public class MaterialLikeTextField: UITextField {
     /// default true.
     public var underlineTextIsDynamicHeight = true {
         didSet {
-            underlineBoxHeightConstraint?.constant = leadingLabelProxy.bounds.height
-            underlineBoxHeightConstraint?.isActive = !underlineTextIsDynamicHeight
+            leadingUnderLabelBottomConstraint?.isActive = underlineTextIsDynamicHeight
         }
     }
 
@@ -216,14 +215,14 @@ public class MaterialLikeTextField: UITextField {
     private lazy var leadingUnderLabel = UILabel()
     private let underlineBox = UIView()
     private var underlineBoxConstraints = PaddingConstraints()
-    private var leadingLabelZeroHeightConstraint: NSLayoutConstraint?
-    private var underlineBoxHeightConstraint: NSLayoutConstraint?
+    private var leadingUnderLabelZeroHeightConstraint: NSLayoutConstraint?
+    private var leadingUnderLabelBottomConstraint: NSLayoutConstraint?
     private var leadingLabelIsAnimating = false
     private var defaultLabelFont: UIFont!
     private var placeholderText: String? = nil
 
     /// leading underline text label proxy
-    private lazy var leadingLabelProxy = UILabel()
+    //private lazy var leadingLabelProxy = UILabel()
     
     // MARK: override properties
     
@@ -392,12 +391,13 @@ public class MaterialLikeTextField: UITextField {
         underlineBoxConstraints.leading = underlineBox.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: leadingLabelPadding.left)
         underlineBoxConstraints.leading?.isActive = true
         // trailing
-        underlineBoxConstraints.trailing = underlineBox.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor, constant: -leadingLabelPadding.right)
+        underlineBoxConstraints.trailing = underlineBox.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -leadingLabelPadding.right)
         underlineBoxConstraints.trailing?.isActive = true
         // height
-        underlineBoxHeightConstraint = underlineBox.heightAnchor.constraint(equalToConstant: 20)
-        underlineBoxHeightConstraint?.priority = .required
-        underlineBoxHeightConstraint?.isActive = false
+        underlineBox.backgroundColor = .yellow
+        let boxHeight = underlineBox.heightAnchor.constraint(equalToConstant: 0)
+        boxHeight.priority = .defaultHigh
+        boxHeight.isActive = true
 
         leadingUnderLabel.translatesAutoresizingMaskIntoConstraints = false
         leadingUnderLabel.setContentCompressionResistancePriority(.required, for: .vertical)
@@ -408,22 +408,22 @@ public class MaterialLikeTextField: UITextField {
         leadingUnderLabel.textColor = leadingUnderlineLabelTextColor
         underlineBox.addSubview(leadingUnderLabel)
 
-        // constraints
+        // under leading label constraints
 
         // top
         leadingUnderLabel.topAnchor.constraint(equalTo: underlineBox.topAnchor).isActive = true
         // bottom
-        let bottom = leadingUnderLabel.bottomAnchor.constraint(equalTo: underlineBox.bottomAnchor)
-        bottom.priority = .defaultHigh
-        bottom.isActive = true
+        leadingUnderLabelBottomConstraint = leadingUnderLabel.bottomAnchor.constraint(equalTo: underlineBox.bottomAnchor)
+        leadingUnderLabelBottomConstraint?.priority = .required
+        leadingUnderLabelBottomConstraint?.isActive = underlineTextIsDynamicHeight
         // leading
         leadingUnderLabel.leadingAnchor.constraint(equalTo: underlineBox.leadingAnchor).isActive = true
         // trailing
         leadingUnderLabel.trailingAnchor.constraint(lessThanOrEqualTo: underlineBox.trailingAnchor).isActive = true
         // zero height
-        leadingLabelZeroHeightConstraint = leadingUnderLabel.heightAnchor.constraint(equalToConstant: 0)
-        leadingLabelZeroHeightConstraint?.priority = .defaultHigh
-        leadingLabelZeroHeightConstraint?.isActive = !hasLeadingTexts && underlineTextIsDynamicHeight
+        leadingUnderLabelZeroHeightConstraint = leadingUnderLabel.heightAnchor.constraint(equalToConstant: 0)
+        leadingUnderLabelZeroHeightConstraint?.priority = .defaultHigh
+        leadingUnderLabelZeroHeightConstraint?.isActive = !hasLeadingTexts
 
         // update
         updateLeadingLabelText()
@@ -668,22 +668,17 @@ public class MaterialLikeTextField: UITextField {
             //            print("리딩 라벨 삭제")
             hideLeadingUnderlineLabel(animated)
         }
-        if !underlineTextIsDynamicHeight && leadingLabelProxy.bounds.height == 0 {
-            leadingLabelProxy.text = "Temp"
-            leadingLabelProxy.sizeToFit()
-            leadingLabelProxy.setNeedsLayout()
-            if debuging {
-                print("\(klass) - updated underline leading bounds")
-            }
-        }
-        underlineBoxHeightConstraint?.constant = leadingLabelProxy.bounds.height
     }
     
     private func topOffsetForLeadingLabel(_ hidden: Bool) -> CGFloat {
-        if hidden && underlineTextIsDynamicHeight {
+        if underlineTextIsDynamicHeight {
+            if hidden {
+                return underlineLayer.frame.maxY
+            }
+            return underlineLayer.frame.maxY + leadingLabelPadding.top
+        } else {
             return underlineLayer.frame.maxY
         }
-        return underlineLayer.frame.maxY + leadingLabelPadding.top
     }
     
     private func updateLeadingLabelPositionY() {
@@ -695,8 +690,8 @@ public class MaterialLikeTextField: UITextField {
         leadingUnderLabel.text = text
         leadingUnderLabel.sizeToFit()
 
-        leadingLabelProxy.text = text ?? (!underlineTextIsDynamicHeight ? "Temp" : nil)
-        leadingLabelProxy.sizeToFit()
+        //leadingLabelProxy.text = text ?? (!underlineTextIsDynamicHeight ? "Temp" : nil)
+        //leadingLabelProxy.sizeToFit()
     }
     
     private func updateLeadingLabelTextColor() {
@@ -710,7 +705,7 @@ public class MaterialLikeTextField: UITextField {
         if animated && !leadingLabelIsAnimating {
             //superview?.layoutIfNeeded()
             leadingLabelIsAnimating = true
-            leadingLabelZeroHeightConstraint?.isActive = false
+            leadingUnderLabelZeroHeightConstraint?.isActive = false
             underlineBoxConstraints.top?.constant = topOffsetForLeadingLabel(false)
             //            print("------leadingLabel")
             UIView.animate(
@@ -732,7 +727,7 @@ public class MaterialLikeTextField: UITextField {
             leadingLabelIsAnimating = false
             leadingUnderLabel.isHidden = false
             leadingUnderLabel.alpha = 1
-            leadingLabelZeroHeightConstraint?.isActive = false
+            leadingUnderLabelZeroHeightConstraint?.isActive = false
             underlineBoxConstraints.top?.constant = topOffsetForLeadingLabel(false)
         }
     }
@@ -750,7 +745,7 @@ public class MaterialLikeTextField: UITextField {
                 completion: { [weak self] finished in
                     self?.leadingUnderLabel.isHidden = true
                     self?.underlineBoxConstraints.top?.constant = self?.topOffsetForLeadingLabel(true) ?? 0
-                    self?.leadingLabelZeroHeightConstraint?.isActive = self?.underlineTextIsDynamicHeight ?? true
+                    self?.leadingUnderLabelZeroHeightConstraint?.isActive = true
                     
                     self?.leadingLabelIsAnimating = false
                     self?.updateLeadingLabelText()
@@ -763,7 +758,7 @@ public class MaterialLikeTextField: UITextField {
             leadingUnderLabel.alpha = 0
             leadingUnderLabel.isHidden = true
             underlineBoxConstraints.top?.constant = topOffsetForLeadingLabel(true)
-            leadingLabelZeroHeightConstraint?.isActive = self.underlineTextIsDynamicHeight
+            leadingUnderLabelZeroHeightConstraint?.isActive = true
         }
     }
 }
