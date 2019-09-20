@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MaterialLikeTextField'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'One file material design styled UITextField.'
 
 # This description is used to generate tags and improve search results.
