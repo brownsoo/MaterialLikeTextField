@@ -170,7 +170,6 @@ public class MaterialLikeTextField: UITextField {
         return CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRange(location: 0,length: 0), nil, CGSize(width: width, height: .greatestFiniteMagnitude), nil)
     }
 
-    public var tintedClearImage: UIImage?
     public var nextTextField: MaterialLikeTextField?
     
     // label --
