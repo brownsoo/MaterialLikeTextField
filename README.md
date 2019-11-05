@@ -12,8 +12,8 @@
 
 ### TODO
 
-- [ ] Code line documentation
-- [ ] fix: 'changeLabelWithPlaceholder' is set to use it.
+- [ ] Layout with Auth Font size
+- [ ] Code line documentationt.
 - [ ] add more examples
 
 ## Example
