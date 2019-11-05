@@ -15,11 +15,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     private lazy var emailMf = Mtf()
     private lazy var passwordMf = Mtf()
+    private lazy var autosizeMf = Mtf()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         view.addSubview(emailMf)
         emailMf.translatesAutoresizingMaskIntoConstraints = false
         emailMf.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -46,7 +47,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordMf.topAnchor.constraint(equalTo: emailMf.bottomAnchor, constant: 8).isActive = true
         passwordMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
         passwordMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
-        passwordMf.labelText = "비밀번호 (underlineTextIsDynamicHeight = true"
+        passwordMf.labelText = "비밀번호 (underlineTextIsDynamicHeight = true)"
         passwordMf.placeholder = "please type password"
         passwordMf.isSecureTextEntry = true
         passwordMf.delegate = self
@@ -59,11 +60,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         passwordMf.layer.borderColor = UIColor.magenta.cgColor
         passwordMf.layer.borderWidth = 0.5
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+        view.addSubview(autosizeMf)
+        autosizeMf.translatesAutoresizingMaskIntoConstraints = false
+        autosizeMf.topAnchor.constraint(equalTo: passwordMf.bottomAnchor, constant: 8).isActive = true
+        autosizeMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
+        autosizeMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
+        autosizeMf.labelText = "자동폰트크기 (adjustsFontSizeToFitWidth = true)"
+        autosizeMf.placeholder = "please type anythings"
+        autosizeMf.adjustsFontSizeToFitWidth = true
+
+        autosizeMf.layer.borderColor = UIColor.magenta.cgColor
+        autosizeMf.layer.borderWidth = 0.5
     }
     
     @objc

@@ -19,23 +19,48 @@ public class MaterialLikeTextField: UITextField {
     }
     
     struct DefaultColorSet {
-        let hexValue: Int
-        
-        init(_ hex: Int) {
-            self.hexValue = hex
+
+        static var label: UIColor {
+            if #available(iOS 13, *) {
+                return UIColor.label
+            }
+            return toColor(0xff343a40)
         }
-        
-        static let label = DefaultColorSet(0xff343a40)
-        static let helper = DefaultColorSet(0x56343a40)
-        static let placeholder = DefaultColorSet(0x56343a40)
-        static let error = DefaultColorSet(0xfff95454)
-        static let underline = DefaultColorSet(0x35000000)
-        
-        func uiColor() -> UIColor {
-            let alpha = CGFloat((hexValue >> 24) & 0xff) / 255.0
-            let red = CGFloat((hexValue >> 16) & 0xff) / 255.0
-            let green = CGFloat((hexValue >> 8) & 0xff) / 255.0
-            let blue = CGFloat(hexValue & 0xff) / 255.0
+        static var helper: UIColor {
+            if #available(iOS 13, *) {
+                return UIColor.label
+            }
+            return toColor(0xff343a40)
+        }
+        static var placeholder: UIColor {
+            if #available(iOS 13, *) {
+                return UIColor.placeholderText
+            }
+            return toColor(0x56343a40)
+        }
+        static var error: UIColor {
+            if #available(iOS 13, *) {
+                return UIColor.systemRed
+            }
+            return toColor(0xfff95454)
+        }
+        static var underline: UIColor {
+            if #available(iOS 13, *) {
+                return UIColor.init { (trait) -> UIColor in
+                    if trait.userInterfaceStyle == .dark {
+                        return toColor(0x35ffffff)
+                    }
+                    return toColor(0x35000000)
+                }
+            }
+            return toColor(0x35000000)
+        }
+
+        static func toColor(_ hex: Int) -> UIColor {
+            let alpha = CGFloat((hex >> 24) & 0xff) / 255.0
+            let red = CGFloat((hex >> 16) & 0xff) / 255.0
+            let green = CGFloat((hex >> 8) & 0xff) / 255.0
+            let blue = CGFloat(hex & 0xff) / 255.0
             return UIColor(red: red, green: green, blue: blue, alpha: alpha)
         }
     }
@@ -55,11 +80,9 @@ public class MaterialLikeTextField: UITextField {
             layoutLabel(false)
         }
     }
-    
-    // public var changeLabelWithPlaceholderWhenFocus = false
 
-    /// inherited placeholder color
-    public var placeHolderColor: UIColor = DefaultColorSet.placeholder.uiColor() {
+    /// inherited placeholder color for attributedPlaceHolder
+    public var placeHolderColor: UIColor = DefaultColorSet.placeholder {
         didSet {
             if let attrPlace = attributedPlaceholder {
                 attributedPlaceholder = createAttributedString(attrPlace, withColor: placeHolderColor)
@@ -68,7 +91,7 @@ public class MaterialLikeTextField: UITextField {
     }
     /// label color for normal state
     /// when field is focused, tint color is used
-    public var labelColor = DefaultColorSet.label.uiColor() {
+    public var labelColor = DefaultColorSet.label {
         didSet {
             updateLabelColor()
         }
@@ -99,7 +122,7 @@ public class MaterialLikeTextField: UITextField {
     }
     /// underline color for normal state
     /// if focused, tintColor is used in the condition underlineColorActive is not set.
-    public var underlineColor = DefaultColorSet.underline.uiColor() {
+    public var underlineColor = DefaultColorSet.underline {
         didSet {
             updateUnderlineColor()
         }
@@ -144,12 +167,12 @@ public class MaterialLikeTextField: UITextField {
             self.leadingUnderLabel.font = leadingUnderlineLabelFont
         }
     }
-    public var leadingUnderlineLabelTextColor: UIColor = DefaultColorSet.helper.uiColor() {
+    public var leadingUnderlineLabelTextColor: UIColor = DefaultColorSet.helper {
         didSet {
             updateLeadingLabelTextColor()
         }
     }
-    public var errorColor = DefaultColorSet.error.uiColor() {
+    public var errorColor = DefaultColorSet.error {
         didSet {
             updateLeadingLabelTextColor()
         }
@@ -219,9 +242,6 @@ public class MaterialLikeTextField: UITextField {
     private var leadingLabelIsAnimating = false
     private var defaultLabelFont: UIFont!
     private var placeholderText: String? = nil
-
-    /// leading underline text label proxy
-    //private lazy var leadingLabelProxy = UILabel()
     
     // MARK: override properties
     
