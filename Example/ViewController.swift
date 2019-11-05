@@ -66,11 +66,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         autosizeMf.translatesAutoresizingMaskIntoConstraints = false
         autosizeMf.topAnchor.constraint(equalTo: passwordMf.bottomAnchor, constant: 8).isActive = true
         autosizeMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        autosizeMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
+        //autosizeMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
+        autosizeMf.widthAnchor.constraint(equalToConstant: 200).isActive = true
         autosizeMf.labelText = "자동폰트크기 (adjustsFontSizeToFitWidth = true)"
         autosizeMf.placeholder = "please type anythings"
+        autosizeMf.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        autosizeMf.underlineTextIsDynamicHeight = false
+        autosizeMf.changeLabelWithPlaceholder = true
+        autosizeMf.clearButtonMode = .whileEditing
         autosizeMf.adjustsFontSizeToFitWidth = true
-
+        autosizeMf.minimumFontSize = 12
+        autosizeMf.textPadding = UIEdgeInsets(top: 12, left: 10, bottom: 12, right: 10)
         autosizeMf.layer.borderColor = UIColor.magenta.cgColor
         autosizeMf.layer.borderWidth = 0.5
     }
