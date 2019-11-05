@@ -69,10 +69,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //autosizeMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
         autosizeMf.widthAnchor.constraint(equalToConstant: 200).isActive = true
         autosizeMf.labelText = "자동폰트크기 (adjustsFontSizeToFitWidth = true)"
-        autosizeMf.placeholder = "please type anythings"
+        autosizeMf.placeholder = "please Anything"
         autosizeMf.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         autosizeMf.underlineTextIsDynamicHeight = false
-        autosizeMf.changeLabelWithPlaceholder = true
+        autosizeMf.changeLabelWithPlaceholder = false
+        autosizeMf.textAlignment = .right
         autosizeMf.clearButtonMode = .whileEditing
         autosizeMf.adjustsFontSizeToFitWidth = true
         autosizeMf.minimumFontSize = 12
