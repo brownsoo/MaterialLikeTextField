@@ -280,7 +280,7 @@ public class MaterialLikeTextField: UITextField {
     public override func textRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.textRect(forBounds: bounds)
         if let lineHeight = self.font?.lineHeight {
-            rect.size.height = lineHeight
+            rect.size.height = lineHeight + textPadding.bottom
         }
         rect.origin.y = adjustedTopForTextRect()
         rect.origin.x = rect.origin.x + textPadding.left
@@ -496,7 +496,7 @@ public class MaterialLikeTextField: UITextField {
     
     private func updateUnderlineFrame() {
         let lineHeight = isFirstResponder ? underlineHeightFocused : underlineHeight
-        let y = textRect.maxY + textPadding.bottom - lineHeight
+        let y = textRect.maxY - lineHeight
         underlineLayer.frame = CGRect(x: 0, y: y, width: bounds.width, height: lineHeight)
         if !leadingLabelIsAnimating {
             updateLeadingLabelPositionY()
