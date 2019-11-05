@@ -315,11 +315,15 @@ public class MaterialLikeTextField: UITextField {
         return textRect(forBounds: bounds)
     }
     public override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return textRect(forBounds: bounds)
+        var tr = textRect(forBounds: bounds)
+        tr.origin.y -= (textPadding.bottom / 2)
+        return tr
     }
     public override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
+        let tr = _textRect
         var rect = super.clearButtonRect(forBounds: bounds)
-        rect.origin.y = _textRect.midY - rect.size.height / 2
+        // tr.height contains textPadding.top
+        rect.origin.y = tr.origin.y + (tr.height - textPadding.top - rect.height) / 2
         return rect
     }
     public override var intrinsicContentSize: CGSize {
@@ -708,9 +712,6 @@ public class MaterialLikeTextField: UITextField {
         let text = hasError ? errorText : helperText
         leadingUnderLabel.text = text
         leadingUnderLabel.sizeToFit()
-
-        //leadingLabelProxy.text = text ?? (!underlineTextIsDynamicHeight ? "Temp" : nil)
-        //leadingLabelProxy.sizeToFit()
     }
     
     private func updateLeadingLabelTextColor() {
@@ -722,11 +723,11 @@ public class MaterialLikeTextField: UITextField {
         updateLeadingLabelTextColor()
 
         if animated && !leadingLabelIsAnimating {
-            //superview?.layoutIfNeeded()
+
             leadingLabelIsAnimating = true
             leadingUnderLabelZeroHeightConstraint?.isActive = false
             underlineBoxConstraints.top?.constant = topOffsetForLeadingLabel(false)
-            //            print("------leadingLabel")
+
             UIView.animate(
                 withDuration: DefaultValues.animationDuration,
                 delay: 0,
