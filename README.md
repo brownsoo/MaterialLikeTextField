@@ -12,8 +12,8 @@
 
 ### TODO
 
-- [ ] Layout with Auth Font size
-- [ ] Code line documentationt.
+- [ ] adjust Auth font size
+- [ ] Code line documentation.
 - [ ] add more examples
 
 ## Example
