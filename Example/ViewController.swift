@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private lazy var emailMf = Mtf()
     private lazy var passwordMf = Mtf()
     private lazy var autosizeMf = Mtf()
+    private lazy var searchMf = Mtf()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         emailMf.changeLabelWithPlaceholder = false
         emailMf.underlineTextIsDynamicHeight = false
         emailMf.addTarget(self, action: #selector(emailMfDidChange), for: .editingChanged)
-        
-        emailMf.layer.borderColor = UIColor.magenta.cgColor
-        emailMf.layer.borderWidth = 0.5
+        emailMf.debugging = true
 
         
         view.addSubview(passwordMf)
@@ -55,18 +54,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordMf.autocapitalizationType = .none
         passwordMf.autocorrectionType = .no
         passwordMf.spellCheckingType = .no
+        passwordMf.clearButtonMode = .always
         passwordMf.changeLabelWithPlaceholder = false
         passwordMf.addTarget(self, action: #selector(passwordMfDidChange), for: .editingChanged)
-        
-        passwordMf.layer.borderColor = UIColor.magenta.cgColor
-        passwordMf.layer.borderWidth = 0.5
+        passwordMf.debugging = true
 
 
         view.addSubview(autosizeMf)
         autosizeMf.translatesAutoresizingMaskIntoConstraints = false
         autosizeMf.topAnchor.constraint(equalTo: passwordMf.bottomAnchor, constant: 8).isActive = true
         autosizeMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        //autosizeMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
         autosizeMf.widthAnchor.constraint(equalToConstant: 200).isActive = true
         autosizeMf.labelText = "자동폰트크기 (adjustsFontSizeToFitWidth = true)"
         autosizeMf.placeholder = "please Anything"
@@ -78,8 +75,43 @@ class ViewController: UIViewController, UITextFieldDelegate {
         autosizeMf.adjustsFontSizeToFitWidth = true
         autosizeMf.minimumFontSize = 12
         autosizeMf.textPadding = UIEdgeInsets(top: 12, left: 10, bottom: 12, right: 10)
-        autosizeMf.layer.borderColor = UIColor.magenta.cgColor
-        autosizeMf.layer.borderWidth = 0.5
+        autosizeMf.debugging = true
+        
+        
+        let tf = UITextField()
+        view.addSubview(tf)
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.topAnchor.constraint(equalTo: autosizeMf.bottomAnchor, constant: 8).isActive = true
+        tf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
+        tf.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        tf.placeholder = "UITextField (adjustsFontSizeToFitWidth = true)"
+        tf.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        tf.textAlignment = .right
+        tf.clearButtonMode = .whileEditing
+        tf.adjustsFontSizeToFitWidth = true
+        tf.minimumFontSize = 12
+        tf.layer.borderColor = UIColor.magenta.withAlphaComponent(0.5).cgColor
+        tf.layer.borderWidth = 1
+        
+        view.addSubview(searchMf)
+        searchMf.translatesAutoresizingMaskIntoConstraints = false
+        searchMf.topAnchor.constraint(equalTo: tf.bottomAnchor, constant: 8).isActive = true
+        searchMf.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
+        searchMf.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
+        searchMf.labelText = "Left View"
+        searchMf.placeholder = "please Anything"
+        searchMf.underlineTextIsDynamicHeight = false
+        searchMf.changeLabelWithPlaceholder = false
+        let iv = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        iv.contentMode = UIView.ContentMode.scaleAspectFit
+        iv.image = UIImage(named: "icSearch")
+        searchMf.leftView = iv
+        searchMf.leftViewMode = .always
+        searchMf.clearButtonMode = .whileEditing
+        searchMf.textPadding = UIEdgeInsets(top: 12, left: 10, bottom: 12, right: 10)
+        searchMf.debugging = true
+        
+        
     }
     
     @objc
